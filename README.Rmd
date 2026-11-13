@@ -1,0 +1,52 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# assignmentB2GraceGould Package
+
+This is a minimal working example of my assignmentB2GraceGould package. 
+
+
+## Installation
+
+```{r}
+# install.packages("devtools")
+'devtools::install_github("UBC-STAT545-F2026/assignmentB2GraceGould")'
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(diversedata)
+library(tidyverse)
+library(assignmentB2GraceGould)
+
+#Example 1: Using function with categorical_col of class character and mean_metric of class numeric
+group_summary(wildfire, fire_type, current_size)
+```
+```{r}
+
+#Example 2: Using function with categorical_col that is of type numeric. Use as factor to change column class. Then use group_summary() function.
+wildfire$year <- as.factor(wildfire$year)
+group_summary(wildfire, year, temperature)
+
+#Example 3: Can use function with columns with many NAs
+#colSums(is.na(wildfire)) #Looked for column with many NAs
+group_summary(wildfire, fire_type, wind_speed)#wind_speed had 2880 NA entries. Passing it as mean_metric variable.
+```
+
+
+

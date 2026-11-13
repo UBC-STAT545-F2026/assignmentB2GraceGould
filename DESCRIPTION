@@ -1,11 +1,10 @@
 Package: assignmentB2GraceGould
-Title: What the Package Does (One Line, Title Case)
+Title: Allow use of group_summary function for categorical data grouping and mean calculation by group.
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Gould", "Grace", , "grace613@student.ubc.ca", role = c("aut", "cre"))
+Description: This package includes the group_summary function which allows data to be grouped by your categorical variable of choice and then the means of the numerical column to be calculated per group. Please see examples within the README file.
+License: `usethis::use_mit_license()`
 Config/roxygen2/version: 8.1.1
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
