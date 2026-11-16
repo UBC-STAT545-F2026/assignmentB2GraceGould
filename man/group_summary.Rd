@@ -20,6 +20,7 @@ a table containing the mean from mean_metric column for each category from categ
 : Calculates mean of numeric column by categorical variable and outputs a summary table with calculated mean metrics
 }
 \examples{
+data("wildfire", package = "diversedata") #load in wildfire data for the examples
 group_summary(wildfire, fire_type, current_size) #Example 1: Using function with categorical_col of class character and mean_metric of class numeric
 wildfire$year <- as.factor(wildfire$year)
 group_summary(wildfire, year, temperature) #' #Example 2: Using function with categorical_col that is of type numeric. Use as factor to change column class. Then use group_summary() function.

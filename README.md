@@ -8,36 +8,32 @@ This is a minimal working example of my assignmentB2GraceGould package.
 ## Installation
 
 ``` r
-# install.packages("devtools")
+install.packages("devtools")
+#> Installing package into 'C:/Users/grace/AppData/Local/Temp/RtmpCwikEi/temp_libpathb4a061995882'
+#> (as 'lib' is unspecified)
+#> also installing the dependency 'cli'
+#> 
+#>   There is a binary version available but the source version is later:
+#>          binary source needs_compilation
+#> devtools  2.5.1  2.5.2             FALSE
+#> 
+#> package 'cli' successfully unpacked and MD5 sums checked
+#> 
+#> The downloaded binary packages are in
+#>  C:\Users\grace\AppData\Local\Temp\RtmpYfKMpI\downloaded_packages
+#> installing the source package 'devtools'
 'devtools::install_github("UBC-STAT545-F2026/assignmentB2GraceGould")'
 #> [1] "devtools::install_github(\"UBC-STAT545-F2026/assignmentB2GraceGould\")"
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example which shows you how to solve a common problem
+using assignmentB2GraceGould package :
 
 ``` r
-library(diversedata)
-library(tidyverse)
-#> Warning: package 'tidyverse' was built under R version 4.4.3
-#> Warning: package 'tidyr' was built under R version 4.4.1
-#> Warning: package 'readr' was built under R version 4.4.1
-#> Warning: package 'purrr' was built under R version 4.4.1
-#> Warning: package 'stringr' was built under R version 4.4.1
-#> Warning: package 'forcats' was built under R version 4.4.1
-#> Warning: package 'lubridate' was built under R version 4.4.3
-#> ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-#> ✔ dplyr     1.1.4     ✔ readr     2.1.5
-#> ✔ forcats   1.0.0     ✔ stringr   1.5.1
-#> ✔ ggplot2   3.5.1     ✔ tibble    3.2.1
-#> ✔ lubridate 1.9.5     ✔ tidyr     1.3.1
-#> ✔ purrr     1.0.2     
-#> ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-#> ✖ dplyr::filter() masks stats::filter()
-#> ✖ dplyr::lag()    masks stats::lag()
-#> ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
 library(assignmentB2GraceGould)
+data("wildfire", package = "diversedata") #load in wildfire dataset from diversedata
 
 #Example 1: Using function with categorical_col of class character and mean_metric of class numeric
 group_summary(wildfire, fire_type, current_size)

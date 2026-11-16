@@ -1,5 +1,5 @@
 Package: assignmentB2GraceGould
-Title: Allow use of group_summary function for categorical data grouping and mean calculation by group.
+Title: Allow use of group_summary function for categorical data grouping and mean calculation by group
 Version: 0.0.0.9000
 Authors@R: 
     person("Gould", "Grace", , "grace613@student.ubc.ca", role = c("aut", "cre"))
@@ -8,3 +8,13 @@ License: `usethis::use_mit_license()`
 Config/roxygen2/version: 8.1.1
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
+Imports: 
+    stats,
+    dplyr,
+    tidyr
+Suggests: 
+    testthat (>= 3.0.0),
+    diversedata
+Remotes:
+    diverse-data-hub/diversedata
+Config/testthat/edition: 3
