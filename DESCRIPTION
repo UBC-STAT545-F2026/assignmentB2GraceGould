@@ -1,6 +1,6 @@
 Package: assignmentB2GraceGould
 Title: Allow use of group_summary function for categorical data grouping and mean calculation by group
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R: 
     person("Gould", "Grace", , "grace613@student.ubc.ca", role = c("aut", "cre"))
 Description: This package includes the group_summary function which allows data to be grouped by your categorical variable of choice and then the means of the numerical column to be calculated per group. Please see examples within the README file.
