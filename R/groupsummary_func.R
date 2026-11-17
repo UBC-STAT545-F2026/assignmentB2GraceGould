@@ -1,7 +1,7 @@
 
 #title: Function for Assignment B1
 #author: Grace Gould
-#date: 2026-11-13
+#date: 2026-11-16
 
 ## Exercise 1 and 2
 ##Function to group and plot by column name
